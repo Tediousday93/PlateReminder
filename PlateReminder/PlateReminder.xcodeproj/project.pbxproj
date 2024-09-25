@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AD00E56A2CA2A1D3009C0506 /* PlateReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00E5692CA2A1D3009C0506 /* PlateReminderApp.swift */; };
-		AD00E56C2CA2A1D3009C0506 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00E56B2CA2A1D3009C0506 /* ContentView.swift */; };
+		AD00E56C2CA2A1D3009C0506 /* PlateGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00E56B2CA2A1D3009C0506 /* PlateGaugeView.swift */; };
 		AD00E56E2CA2A1D7009C0506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD00E56D2CA2A1D7009C0506 /* Assets.xcassets */; };
 		AD00E5712CA2A1D7009C0506 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD00E5702CA2A1D7009C0506 /* Preview Assets.xcassets */; };
 		AD00E57B2CA2A1D7009C0506 /* PlateReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00E57A2CA2A1D7009C0506 /* PlateReminderTests.swift */; };
 		AD00E5852CA2A1D7009C0506 /* PlateReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00E5842CA2A1D7009C0506 /* PlateReminderUITests.swift */; };
 		AD00E5872CA2A1D7009C0506 /* PlateReminderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00E5862CA2A1D7009C0506 /* PlateReminderUITestsLaunchTests.swift */; };
+		AD00E5962CA3FC65009C0506 /* PlateGaugeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD00E5952CA3FC65009C0506 /* PlateGaugeStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		AD00E5662CA2A1D3009C0506 /* PlateReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlateReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD00E5692CA2A1D3009C0506 /* PlateReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateReminderApp.swift; sourceTree = "<group>"; };
-		AD00E56B2CA2A1D3009C0506 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD00E56B2CA2A1D3009C0506 /* PlateGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateGaugeView.swift; sourceTree = "<group>"; };
 		AD00E56D2CA2A1D7009C0506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD00E5702CA2A1D7009C0506 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD00E5762CA2A1D7009C0506 /* PlateReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlateReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		AD00E5802CA2A1D7009C0506 /* PlateReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlateReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD00E5842CA2A1D7009C0506 /* PlateReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateReminderUITests.swift; sourceTree = "<group>"; };
 		AD00E5862CA2A1D7009C0506 /* PlateReminderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateReminderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AD00E5952CA3FC65009C0506 /* PlateGaugeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateGaugeStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				AD00E5692CA2A1D3009C0506 /* PlateReminderApp.swift */,
-				AD00E56B2CA2A1D3009C0506 /* ContentView.swift */,
+				AD00E5932CA3FC31009C0506 /* Views */,
 				AD00E56D2CA2A1D7009C0506 /* Assets.xcassets */,
 				AD00E56F2CA2A1D7009C0506 /* Preview Content */,
 			);
@@ -125,6 +127,23 @@
 				AD00E5862CA2A1D7009C0506 /* PlateReminderUITestsLaunchTests.swift */,
 			);
 			path = PlateReminderUITests;
+			sourceTree = "<group>";
+		};
+		AD00E5932CA3FC31009C0506 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD00E5942CA3FC48009C0506 /* GaugeView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD00E5942CA3FC48009C0506 /* GaugeView */ = {
+			isa = PBXGroup;
+			children = (
+				AD00E56B2CA2A1D3009C0506 /* PlateGaugeView.swift */,
+				AD00E5952CA3FC65009C0506 /* PlateGaugeStyle.swift */,
+			);
+			path = GaugeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD00E56C2CA2A1D3009C0506 /* ContentView.swift in Sources */,
+				AD00E56C2CA2A1D3009C0506 /* PlateGaugeView.swift in Sources */,
+				AD00E5962CA3FC65009C0506 /* PlateGaugeStyle.swift in Sources */,
 				AD00E56A2CA2A1D3009C0506 /* PlateReminderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
